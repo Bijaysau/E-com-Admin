@@ -1,12 +1,54 @@
-# React + Vite
+# 🛠️ Worncom Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Worncom Admin Panel**, a powerful and intuitive dashboard to manage products, orders, and other administrative tasks for your e-commerce platform.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Add Products**: Easily add new products with relevant details.
+- 📦 **Product Management**: View, update, or remove products in the store.
+- 🗺️ **Change Delivery Status**: Update product delivery statuses.
+- 🔄 **Order Management**: Track orders and update their status (e.g., Pending, Shipped, Delivered).
+- 🔔 **Notifications**: Get instant feedback on your actions with toast notifications.
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Here’s a brief overview of the directory structure for this project:
+
+
+├── assets/ # Contains images and icons
+│ ├── add_icon.png # Icon for Add Product
+│ ├── list_icon.png # Icon for Product List
+│ ├── logo.png # Company Logo
+│ ├── logo1.png # Secondary Logo
+│ ├── order_icon.png # Icon for Orders
+│ └── parcel_icon.svg # SVG icon for Parcel
+│
+├── components/ # React components for various UI elements
+│ ├── Login.jsx # Login page component
+│ ├── Navbar.jsx # Navbar for navigating the panel
+│ ├── Sidebar.jsx # Sidebar navigation
+│
+├── pages/ # Main page components
+│ ├── Add.jsx # Add new product page
+│ ├── List.jsx # Product listing page
+│ ├── Orders.jsx # Order management page
+│ ├── App.jsx # Root component with routes
+│
+├── public/ # Public static files
+│ ├── d.png # Placeholder image
+│ └── vite.svg # Vite logo
+│
+├── src/ # Source code folder
+│ ├── assets.js
+
+## 📂 ENV Structure
+   VITE_BACKEND_URL = 'http://localhost:4000'
+
+##  Step 2: Install Dependencies
+Install the required dependencies for the project:
+
+npm install
+Step 3: Run the Development Server
+Run the development server to start building your admin panel:
+
+npm run dev
