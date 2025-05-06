@@ -1,99 +1,117 @@
 # 🛠️ Worncom Admin Panel
 
-Welcome to the **Worncom Admin Panel**, your powerful and intuitive dashboard designed to streamline product and order management for your e-commerce platform. With this admin panel, you can efficiently manage your store's inventory, track orders, and stay updated on delivery statuses.
+Welcome to the **Worncom Admin Panel** — a powerful, intuitive dashboard designed to streamline product and order management for your e-commerce platform. With this panel, you can manage inventory, track orders, and stay updated on delivery statuses, all in one place.
 
-## 🚀 Features
+---
 
-- ✅ **Add Products**: Quickly add new products with all the relevant details, including name, price, and images.
-- 📦 **Product Management**: Easily view, update, or remove products in your store.
-- 🗺️ **Change Delivery Status**: Update and track product delivery statuses (e.g., Pending, Shipped, Delivered).
-- 🔄 **Order Management**: Efficiently manage and update the status of customer orders.
-- 🔔 **Instant Notifications**: Receive instant feedback on your actions with toast notifications for a smooth user experience.
+## 🚀 Key Features
 
-## 📂 Project Structure
+- ✅ **Add Products** – Quickly add new products with name, price, images, and more.
+- 📦 **Product Management** – View, edit, or delete existing products easily.
+- 📍 **Delivery Status Updates** – Track and update delivery statuses like *Pending*, *Shipped*, and *Delivered*.
+- 🔄 **Order Management** – Manage customer orders and update their status effortlessly.
+- 🔔 **Real-time Notifications** – Get instant feedback via toast notifications for your actions.
 
-Here’s a brief overview of the directory structure for this project:
+---
 
-├── assets/ # Contains images and icons
-│ ├── add_icon.png # Icon for Add Product
-│ ├── list_icon.png # Icon for Product List
-│ ├── logo.png # Company Logo
-│ ├── logo1.png # Secondary Logo
-│ ├── order_icon.png # Icon for Orders
-│ └── parcel_icon.svg # SVG icon for Parcel
+## 📁 Project Structure
+
+```bash
+worncom-admin-panel/
+├── assets/           # Icons and images
+│   ├── add_icon.png
+│   ├── list_icon.png
+│   ├── logo.png
+│   ├── logo1.png
+│   ├── order_icon.png
+│   └── parcel_icon.svg
 │
-├── components/ # React components for various UI elements
-│ ├── Login.jsx # Login page component
-│ ├── Navbar.jsx # Navbar for navigating the panel
-│ ├── Sidebar.jsx # Sidebar navigation
+├── components/       # Reusable UI components
+│   ├── Login.jsx
+│   ├── Navbar.jsx
+│   └── Sidebar.jsx
 │
-├── pages/ # Main page components
-│ ├── Add.jsx # Add new product page
-│ ├── List.jsx # Product listing page
-│ ├── Orders.jsx # Order management page
-│ ├── App.jsx # Root component with routes
+├── pages/            # Page-level components
+│   ├── Add.jsx
+│   ├── List.jsx
+│   ├── Orders.jsx
+│   └── App.jsx
 │
-├── public/ # Public static files
-│ ├── d.png # Placeholder image
-│ └── vite.svg # Vite logo
+├── public/           # Static files
+│   ├── d.png
+│   └── vite.svg
 │
-├── src/ # Source code folder
-│ ├── assets.js # Asset management
+├── src/
+│   └── assets.js     # Asset manager
+```
 
-bash
-Copy
-Edit
+---
 
-## 🛠️ Environment Setup
+## ⚙️ Environment Setup
 
-### Step 1: Clone the Repository
-Clone this repository to your local machine:
+### 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd worncom-admin-panel
-Step 2: Install Dependencies
-Install the required dependencies for the project:
+```
 
-bash
-Copy
-Edit
+### 2. Install Dependencies
+
+```bash
 npm install
-Step 3: Run the Development Server
-Run the development server to start building your admin panel:
+```
 
-bash
-Copy
-Edit
+### 3. Start Development Server
+
+```bash
 npm run dev
-Your admin panel will be live on http://localhost:3000.
+```
 
-📂 ENV Variables
-Make sure to set up your environment variables in a .env file:
+Your admin panel will be live at: [http://localhost:3000](http://localhost:3000)
 
-env
-Copy
-Edit
+---
+
+## 🌐 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
 VITE_BACKEND_URL='http://localhost:4000'
+```
+
 This will ensure proper connection to your backend API.
 
-👨‍💻 Development Notes
-This project is built using React and Vite for fast and efficient development.
+---
 
-You can modify components under the components/ directory for UI changes.
+## 🧑‍💻 Development Notes
 
-For managing product data and orders, the backend API should be set up and running on the specified VITE_BACKEND_URL.
+- Built using **React** and **Vite** for fast and efficient development.
+- Modify UI elements under the `components/` directory.
+- Ensure backend API is running on the URL specified in the `.env` file.
 
-🎨 UI Components
-Navbar: Contains links for easy navigation within the admin panel.
+---
 
-Sidebar: A collapsible sidebar with links to manage products, orders, and more.
+## 🎨 UI Overview
 
-Toast Notifications: Informative feedback for successful or failed actions.
+- **Navbar** – Top navigation for quick access to sections.
+- **Sidebar** – Collapsible sidebar with links to manage products, orders, and more.
+- **Toast Notifications** – Feedback system for successful or failed actions.
 
-✨ Future Features
-🚀 Authentication: Secure the admin panel with authentication (JWT, OAuth).
+---
 
-🔒 Permissions: Admin roles with specific permissions for different user levels.
+## 🌟 Upcoming Features
 
-📈 Analytics Dashboard: Track sales, product performance, and user activities.
+- 🔐 **Authentication** – Secure the admin panel using JWT or OAuth.
+- 👥 **Permissions** – Role-based access control for multiple admin types.
+- 📊 **Analytics Dashboard** – Track sales, user activity, and product performance.
+
+---
+
+## 📬 Feedback or Contributions?
+
+We welcome contributions! Please submit a pull request or open an issue if you have suggestions.
+
+---
+
+Thanks for using **Worncom Admin Panel**! 💼
